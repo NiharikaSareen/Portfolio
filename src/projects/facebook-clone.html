@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End Developer - Niharika Sareen</title>
+    <meta name="description" content="Portfolio of Front End Developer Niharika Sareen."> 
+    <meta property="og:title" content="Niharika Sareen"/>
+    <meta property="og:type" content="website"/> 
+    <meta property="og:description" content="Portfolio of Front End Developer Niharika Sareen."/> 
+    <meta property="og:url" content="index.html"/> 
+    <meta property="og:site_name" content="Niharika Sareen"/>
+    <link rel="stylesheet" href="../scss/style.scss">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <div class="link_logo">
+            <a aria-label="Niharika Sareen" href="../index.html">
+               NS.
+         </a> 
+       </div>
+    <div class="top__link text-sm">
+            <div class="sound-container ">
+                   
+                    <audio id="audio" src="http://www.sousound.com/music/healing/healing_01.mp3" preload="auto">
+                    </audio>
+                    <button class="sound-container__button" id="audioButton">
+                        <span class='sound-icon' id="audioButton">
+                            <div class='sound-wave'>
+                                <i class='bar'></i>
+                                <i class='bar'></i>
+                                <i class='bar'></i>
+                                <i class='bar'></i>
+                                <i class='bar'></i>
+                            </div>
+                        </span>
+                    </button>
+                    <div class="sound-container__indicator"
+                    id="sound-container__indicator">
+                            Audio
+                    </div>
+                </div>
+        </div>
+
+    <main data-router-wrapper>
+        <div data-router-view="project">
+
+            <div class="top__link text-sm link__home">
+                <a href="../index.html" class="link">Return</a>
+            </div>
+
+            <div class="project__text container">
+                <div class="project__title text-big">
+                    <h1><span>Facebook Clone.</span></h1>
+                </div>
+                <span class="project__link">
+                    <a href="https://facebook-ns.netlify.app/" target="_blank" class="link">See the Website</a>
+                </span>
+                <div class="project__infos">
+                    <div class="project__year">
+                        <span>Year</span>
+                        <p>2020</p>
+                    </div>
+                    <div class="project__role">
+                        <span>Role</span>
+                        <p>Front-end Development</p>
+                        <p>Back-end Development</p>
+                        </br>
+                        <span>Technologies</span>
+                        <p>React Js</p>
+                        <p>Firebase</p>
+                    </div>
+                    <div class="project__description">
+                        <span>Client Overview</span>
+                        <p>
+                        Facebook Clone built with React JS. It has the functionality to add a post, add an image, like a post. Sign In or Register with your email id and password. Data is shown realtime, so no need to refresh the page. Backend of this project is done in firebase.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project__images">
+                <img sizes="(min-width: 992px) 75vw, (min-width: 768px) 90vw, 100vw" srcset="
+                ../img/projects/facebook-clone/facebook-register_w_400.png 400w,
+                ../img/projects/facebook-clone/facebook-register_w_714.png 714w, 
+                ../img/projects/facebook-clone/facebook-register_w_961.png 961w,
+                ../img/projects/facebook-clone/facebook-register_w_1600.png 1600w"
+                src="../img/projects/facebook-clone/facebook-register_w_1600.png" alt="Facebook Register" loading="lazy">
+                <img sizes="(min-width: 992px) 75vw, (min-width: 768px) 90vw, 100vw" srcset="
+                ../img/projects/facebook-clone/facebook-login_w_400.png 400w,
+                ../img/projects/facebook-clone/facebook-login_w_714.png 714w, 
+                ../img/projects/facebook-clone/facebook-login_w_961.png 961w,
+                ../img/projects/facebook-clone/facebook-login_w_1600.png 1600w"
+                src="../img/projects/facebook-clone/facebook-login_w_1600.png" alt="Facebook Login" loading="lazy">
+                    <video autoplay loop muted playsinline>
+                            <source src="../img/projects/facebook-clone/facebook-clone.mp4" type="video/mp4">
+                              Your browser does not support videos.
+                  </video>
+                <img sizes="(min-width: 992px) 75vw, (min-width: 768px) 90vw, 100vw" srcset="
+                ../img/projects/facebook-clone/facebook-feed_w_400.png 400w,
+                ../img/projects/facebook-clone/facebook-feed_w_714.png 714w, 
+                ../img/projects/facebook-clone/facebook-feed_w_961.png 961w,
+                ../img/projects/facebook-clone/facebook-feed_w_1600.png 1600w"
+                src="../img/projects/facebook-clone/facebook-feed_w_1600.png" alt="Facebook Login" loading="lazy">
+            </div>
+
+            <footer class="project__footer container">
+                <a href="../index.html#" class="footer__prev">
+                    <span>Back To</span>
+                    <p>Projets</p>
+                </a>
+                <a href="johnSwift.html" class="footer__next">
+                    <span>Next</span>
+                    <p>John Swift Property</p>
+                </a>
+            </footer>
+
+        </div>
+    </main>
+    <footer class="footer container text-sm" role="navigation" aria-label="Main Navigation">
+            <div class="footer__link">
+                <a href="../contact.html"  class="link">CONTACT </a>
+            </div>
+            <span></span>
+            <div class="footer__link">
+                <a href="../about.html" class="link" >ABOUT</a>
+            </div>
+            <span></span>
+            <div class="footer__link ">
+                <a href="../index.html" disabled  class="link" >PROJECTS</a>
+            </div>
+        </footer>
+    <div class="screen__transition">
+        <div class="screen__blue"></div>
+        <div class="screen__brown"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

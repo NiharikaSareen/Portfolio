@@ -1,0 +1,175 @@
+.about {
+    position: relative;
+    z-index: 20;
+    width: 100%;
+    .top__link {
+        z-index: 999999;
+    }
+}
+
+.about__infos {
+    font-size: 1.125rem;
+    width: 100%;
+    .about__photo {
+        width: 100%;
+        height: 60vh;
+        height: calc(var(--vh, 1vh) * 60);
+        overflow: hidden;
+        background-image: linear-gradient(0deg, var(--black) 0%, transparent 25%), url("../img/profil.jpg");
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    .about__perso {
+        position: relative;
+        top: -10vh;
+        top: calc(var(--vh, 1vh) * -10);
+        margin-bottom: -10vh;
+        margin-bottom: calc(var(--vh, 1vh) * -10);
+
+        > p {
+            margin-bottom: 40px;
+        }
+
+        > div {
+            margin-bottom: 20px;
+
+            span {
+                font-size: 0.875rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                opacity: 0.75;
+            }
+        }
+
+        .about__scroll {
+            margin-bottom: 0;
+            height: 0;
+        }
+    }
+}
+
+.about__description {
+    text-transform: uppercase;
+    background-color: var(--blue);
+    position: relative;
+    z-index: 30;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    p {
+        margin-bottom: 20px;
+        font-size: 1rem;
+        text-transform: initial;
+    }
+}
+
+@include up(768) {
+    .about__infos {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
+        display: flex;
+        align-items: flex-end;
+
+        .about__photo {
+            width: 50%;
+            height: 70%;
+            background-image: linear-gradient(-90deg, var(--blue) 0%, transparent 25%), url("../img/profil.jpg");
+        }
+
+        .about__perso {
+            top: initial;
+            margin-bottom: 0;
+
+            .about__scroll {
+                margin-bottom: 0;
+                margin-top: 100px;
+                height: 100px;         
+                position: relative;
+             
+            .mouse {
+                display: block;
+                border-radius: 50px;
+                border: 2px solid var(--brown);
+                height: 80px;
+                width: 40px;
+                position: relative;
+              }
+            .move {
+                position: absolute;
+                background-color:var(--brown);
+                height: 8px;
+                width: 8px;
+                border-radius: 50%;
+                left: 50%;
+                transform: translateX(-50%);
+                animation: move 2s linear infinite;
+              }
+            }
+        }
+    }
+
+    .about__description {
+        min-height: 100vh;
+        margin-top: 100vh;
+        margin-top: calc(var(--vh, 1vh) * 100);
+        margin-bottom: 0;
+        padding-top: 150px;
+        padding-bottom: 150px;
+
+        :last-child {
+            margin-bottom: 0;
+        }
+        &.container{
+            h2{
+                font-size: 2.3rem;
+                text-decoration: underline;
+                margin-bottom: 1rem;
+            }
+            h3{
+                font-size: 1.6rem;
+            }
+            h4{
+                font-size: 1rem;
+                text-transform: capitalize
+            }
+            ul{
+                list-style: inside;
+                text-transform: initial;
+                margin: 1rem;
+                font-size: 1.4rem;
+                list-style-position: inherit;
+            }
+        }
+
+    }
+}
+
+@include up(768) {
+    .about__description {
+        padding-right: 200px !important;
+
+        p {
+            margin-bottom: 50px;
+            font-size: 2rem;
+        }
+    }
+}
+
+
+@keyframes move {
+    0% {
+      transform: translate(-50%,10px);
+      opacity: 0;
+    }
+    50% {
+      transform: translate(-50%,40px);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%,60px);
+      opacity: 0;
+    }
+  }

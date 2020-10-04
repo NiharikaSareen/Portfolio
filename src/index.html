@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End Developer - Niharika Sareen</title>
+    <meta name="description" content="Portfolio of Front End Developer Niharika Sareen."> 
+    <meta property="og:title" content="Niharika Sareen"/>
+    <meta property="og:type" content="website"/> 
+    <meta property="og:description" content="Portfolio of Front End Developer Niharika Sareen."/> 
+    <meta property="og:url" content="index.html"/> 
+    <meta property="og:site_name" content="Niharika Sareen"/> 
+    <link rel="stylesheet" href="./scss/style.scss">
+</head>
+
+<body>
+        <!-- <div id="loading_mask">
+                <div class="loading_mask_wrap">
+                  <div id="progress-count">
+                    <span>70</span>
+                   </div>
+                 </div>
+               </div> -->
+               
+    <div id="particles-js"></div>
+    <div class="top__link text-sm">
+            <div class="link_logo">
+                    <a aria-label="Niharika Sareen" href="./index.html">
+                       NS.
+                 </a> 
+               </div>    
+            <div class="sound-container ">
+                   
+                    <audio id="audio" src="http://www.sousound.com/music/healing/healing_01.mp3" preload="auto">
+                    </audio>
+                    <button class="sound-container__button" id="audioButton">
+                        <span class='sound-icon'>
+                            <div class='sound-wave'>
+                                <i class='bar'></i>
+                                <i class='bar'></i>
+                                <i class='bar'></i>
+                                <i class='bar'></i>
+                                <i class='bar'></i>
+                            </div>
+                        </span>
+                    </button>
+                    <div class="sound-container__indicator">
+                            Audio
+                    </div>
+                </div>
+    </div>
+
+    <main data-router-wrapper="">
+        
+        <div data-router-view="home">
+
+            <nav class="projects text-big">
+                <ul class="projects__list">
+                    <li class="projects__link">
+                        <span class="projects__item">
+                            <div class="project__img">
+                                <picture>
+                                    <source media="(orientation: landscape)" 
+                                        srcset="  
+                                        ./img/home/brett-landscaping/brett-landscaping_w_360.jpg 360w,
+                                        ./img/home/brett-landscaping/brett-landscaping_w_749.jpg 749w,
+                                        ./img/home/brett-landscaping/brett-landscaping_w_1028.jpg 1028w,
+                                        ./img/home/brett-landscaping/brett-landscaping_w_1280.jpg 1280w,
+                                        ./img/home/brett-landscaping/brett-landscaping_w_1600.jpg 1600w" sizes="100vw" /> 
+                                    <source srcset="
+                                    ./img/home/brett-landscaping/brett-landscaping_w_360.jpg 360w,
+                                    ./img/home/brett-landscaping/brett-landscaping_w_749.jpg 749w,
+                                    ./img/home/brett-landscaping/brett-landscaping_w_1028.jpg 1028w,
+                                    ./img/home/brett-landscaping/brett-landscaping_w_1280.jpg 1280w,
+                                    ./img/home/brett-landscaping/brett-landscaping_w_1600.jpg 1600w"  sizes="100vw" />
+                                    <img src="./img/home/brett-landscaping/brett-landscaping_w_1280.jpg"
+                                        alt="Brett Landscaping" />
+                                </picture>
+                            </div>
+                            <a href="./projects/brett.html" data-transition="project">Brett Landscaping</a>
+                        </span>
+                    </li>
+                    <li class="projects__link">
+                        <span class="projects__item">
+                            <div class="project__img">
+                                <picture>
+                                    <source media="(orientation: landscape)" srcset="
+                                    ./img/home/Slg-agency/slg-agency_w_360.png 360w,
+                                    ./img/home/Slg-agency/slg-agency_w_749.png 749w,
+                                    ./img/home/Slg-agency/slg-agency_w_1024.png 1024w,
+                                    ./img/home/Slg-agency/slg-agency_w_1280.png 1280w,
+                                    ./img/home/Slg-agency/slg-agency_w_1600.png 1600w" sizes="100vw" />
+                                    <source srcset="
+                                    ./img/home/Slg-agency/slg-agency_w_360.png 360w,
+                                    ./img/home/Slg-agency/slg-agency_w_749.png 749w,
+                                    ./img/home/Slg-agency/slg-agency_w_1024.png 1024w,
+                                    ./img/home/Slg-agency/slg-agency_w_1280.png 1280w,
+                                    ./img/home/Slg-agency/slg-agency_w_1600.png 1600w" sizes="100vw" />
+                                    <img src="./img/home/Slg-agency/slg-agency_w_1024.png"
+                                        alt="SLG Agency" />
+                                </picture>
+                            </div>
+                            <a href="./projects/slg-agency.html" data-transition="project">SLG Agency</a>
+                        </span>
+                    </li>
+                    <li class="projects__link">
+                        <span class="projects__item">
+                            <div class="project__img">
+                                <picture>
+                                    <source media="(orientation: landscape)" srcset="
+                                        ./img/home/sapphire/sapphire_w_360.jpg 360w,
+                                        ./img/home/sapphire/sapphire_w_749.jpg 749w,
+                                        ./img/home/sapphire/sapphire_w_1024.jpg 1024w,
+                                        ./img/home/sapphire/sapphire_w_1280.jpg 1280w,
+                                        ./img/home/sapphire/sapphire_w_1600.jpg 1600w" sizes="100vw" />
+                                    <source srcset="
+                                        ./img/home/sapphire/sapphire_w_360.jpg 360w,
+                                        ./img/home/sapphire/sapphire_w_749.jpg 749w,
+                                        ./img/home/sapphire/sapphire_w_1024.jpg 1024w,
+                                        ./img/home/sapphire/sapphire_w_1280.jpg 1280w,
+                                        ./img/home/sapphire/sapphire_w_1600.jpg 1600w" sizes="100vw" />
+                                    <img src="./img/home/sapphire/sapphire_w_1280.jpg "
+                                        alt="Sapphire Balconies" />
+                                </picture>
+                            </div>
+                            <a href="./projects/sapphire.html" data-transition="project">Sapphire Balconies</a>
+                        </span>
+                    </li>
+                    <li class="projects__link">
+                        <span class="projects__item">
+                            <div class="project__img">
+                                <picture>
+                                    <source media="(orientation: landscape)" srcset="
+                                        ./img/home/facebook-clone/facebook-clone_w_360.png 360w,
+                                        ./img/home/facebook-clone/facebook-clone_w_749.png 749w,
+                                        ./img/home/facebook-clone/facebook-clone_w_1024.png 1024w,
+                                        ./img/home/facebook-clone/facebook-clone_w_1280.png 1280w,
+                                        ./img/home/facebook-clone/facebook-clone_w_1600.png 1600w" sizes="100vw" />
+                                    <source srcset="
+                                    ./img/home/facebook-clone/facebook-clone_w_360.png 360w,
+                                    ./img/home/facebook-clone/facebook-clone_w_749.png 749w,
+                                    ./img/home/facebook-clone/facebook-clone_w_1024.png 1024w,
+                                    ./img/home/facebook-clone/facebook-clone_w_1280.png 1280w,
+                                    ./img/home/facebook-clone/facebook-clone_w_1600.png 1600w" sizes="100vw" />
+                                    <img src="./img/home/facebook-clone/facebook-clone_w_1280.png" alt="Facebook-Clone" />
+                                </picture>
+                            </div>
+                            <a href="./projects/facebook-clone.html" data-transition="project">Facebook-Clone </a>
+                        </span>
+                    </li>
+                    <li class="projects__link">
+                            <span class="projects__item">
+                                <div class="project__img">
+                                    <picture>
+                                        <source media="(orientation: landscape)" srcset="
+                                        ./img/home/johnSwift/johnswift_w_360.jpg 360w,
+                                        ./img/home/johnSwift/johnswift_w_749.jpg 749w,
+                                        ./img/home/johnSwift/johnswift_w_1024.jpg 1024w,
+                                        ./img/home/johnSwift/johnswift_w_1280.jpg 1280w,
+                                        ./img/home/johnSwift/johnswift_w_1600.jpg 1600w" sizes="100vw" />
+                                    <source srcset="
+                                    ./img/home/johnSwift/johnswift-mobile_w_360.jpg 360w,
+                                    ./img/home/johnSwift/johnswift-mobile_w_607.jpg 607w,
+                                    ./img/home/johnSwift/johnswift-mobile_w_814.jpg 814w,
+                                    ./img/home/johnSwift/johnswift-mobile_w_931.jpg 931w" sizes="100vw" />
+                                        <img src="./img/home/johnSwift/johnswift_w_1280.jpg" alt="John Swift Property" />
+                                    </picture>
+                                </div>
+                                <a href="./projects/johnSwift.html" data-transition="project">John Swift Property  </a>
+                            </span>
+                        </li>
+                        <li class="projects__link">
+                                <span class="projects__item">
+                                    <div class="project__img">
+                                        <picture>
+                                            <source media="(orientation: landscape)" srcset="
+                                                ./img/home/polypipeUfh/polypipeUfh_w_360.jpg 360w,
+                                                ./img/home/polypipeUfh/polypipeUfh_w_749.jpg 749w,
+                                                ./img/home/polypipeUfh/polypipeUfh_w_1024.jpg 1024w,
+                                                ./img/home/polypipeUfh/polypipeUfh_w_1280.jpg 1280w,
+                                                ./img/home/polypipeUfh/polypipeUfh_w_1600.jpg 1600w" sizes="100vw" />
+                                            <source srcset="
+                                            ./img/home/polypipeUfh/polypipeUfh-mobile_w_360.jpg 360w,
+                                            ./img/home/polypipeUfh/polypipeUfh-mobile_w_607.jpg 607w,
+                                            ./img/home/polypipeUfh/polypipeUfh-mobile_w_814.jpg 814w,
+                                            ./img/home/polypipeUfh/polypipeUfh-mobile_w_931.jpg 931w" sizes="100vw" />
+                                            <img src="./img/home/polypipeUfh/polypipeUfh_w_1280.jpg" alt="Polypipe Underfloor Heating" />
+                                        </picture>
+                                    </div>
+                                    <a href="./projects/polypipeUfh.html" data-transition="project">Polypipe Underfloor Heating </a>
+                                </span>
+                            </li>
+                </ul>
+            </nav>
+
+        </div>
+    </main>
+   
+    <footer class="footer container text-sm" role="navigation" aria-label="Main Navigation">
+        <div class="footer__link">
+            <a href="./contact.html"  class="link">CONTACT </a>
+        </div>
+        <span></span>
+        <div class="footer__link">
+            <a href="./about.html" class="link" >ABOUT</a>
+        </div>
+        <span></span>
+        <div class="footer__link ">
+            <a href="./index.html" disabled  class="link" >PROJECTS</a>
+        </div>
+    </footer>
+    
+    <div class="screen__transition">
+        <div class="screen__blue"></div>
+        <div class="screen__brown"></div>
+    </div>
+    <script>
+    //   function play() {
+    //     var audio = document.getElementById("audio");
+    //     return audio.paused ? audio.play() : audio.pause();
+    //   }
+            </script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+#loading_mask{
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  z-index:100
+  }
+.loading_mask_wrap{
+  display:block;
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:70%;
+  text-align:center;
+  font-size:5vw;
+  line-height:1.3em;
+  height:1.3em;
+  letter-spacing:.05em;
+  white-space:nowrap;
+  overflow:hidden;
+  font-family:NostraStream;
+  transform:translate(-50%,-.65em);
+  -webkit-transform:translate(-50%,-.65em);
+  opacity:0
+  }
+  #progress-count{
+    position:relative
+    }

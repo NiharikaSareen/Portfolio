@@ -1,0 +1,47 @@
+.footer {
+    // position: absolute;
+     z-index: 10;
+    // bottom: 10%;
+     display: flex;
+     justify-content: space-between;
+    // width: 100%;
+     color:var(--brown);
+     mix-blend-mode: difference;
+     z-index: 999;
+    position: fixed;
+    bottom:50%;
+    left: 15px;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 80vh;
+    width: calc(var(--vh, 1vh) * 80);
+   
+    span{
+        position: relative;
+        display:inline-block;
+        top: .15em;
+        width: 1px;
+        height: 1.1em;
+        background: var(--brown);
+        margin: 0 1.5em 0 1.5em;
+        transform: matrix(0.81915, 0.57358, -0.57357, 0.81914, 0, 0);
+    }
+}
+
+@include up(768) {
+    .footer {
+        .github {
+            display: flex;
+        }
+    }
+}
+
+@include up(992) {
+    .footer {
+        position: fixed;
+        bottom:50%;
+        left: 50px;
+        transform: translate(-50%, -50%) rotate(-90deg);
+        width: 80vh;
+        width: calc(var(--vh, 1vh) * 80);
+    }
+}
