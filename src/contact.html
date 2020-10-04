@@ -22,7 +22,7 @@
   <div class="top__link text-sm">
       <div class="sound-container ">
              
-              <audio id="audio" src="http://www.sousound.com/music/healing/healing_01.mp3" preload="auto">
+              <audio id="audio" src="http://www.sousound.com/music/healing/healing_01.mp3" preload="auto" crossOrigin="anonymous">
               </audio>
               <button class="sound-container__button" id="audioButton">
                   <span class='sound-icon'>
@@ -74,12 +74,7 @@
     <div class="screen__blue"></div>
     <div class="screen__brown"></div>
   </div>
-  <script>
-  function play() {
-    var audio = document.getElementById("audio");
-    return audio.paused ? audio.play() : audio.pause();
-  }
-  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="./js/app.js"></script>
 </body>
